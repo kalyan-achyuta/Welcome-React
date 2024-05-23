@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Hello React</title>
+  </head>
+  <body>
     <div id="root">
-        <!-- <h1>Hello React!!</h1> -->
+      <h1>Not Rendered ...</h1><!-- // This is a container Element... -->
+      <!-- <h1>Hello world..!!!</h1>  // This is the way of creating the helo world program in html... -->
+      <!-- <script> // This is the way of creating the Helo World program by using java script...
+          const heading = document.createElement("h1"); // Here we are creating the h1 element using document.createElement...
+          heading.innerHTML = "Hello JavaScript....!!!"; // Here we are passing the text inside of this h1 element using innerHtml...
+          const root = document.getElementById("root"); // Here we are geeting the root form div by using getElementById....
+          root.appendChild(heading); // Here we are passing the h1 element as a child to the container element...
+      </script> -->
+      <!-- <script
+        crossorigin
+        src="https://unpkg.com/react@18/umd/react.development.js"
+      ></script>
+      <script
+        crossorigin
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      ></script> -->
     </div>
-    <!-- <script>
-        const heading = document.createElement("h1");
-        heading.innerHTML = "Hello Javascript";
-
-        const root = document.getElementById("root");
-        root.appendChild(heading);
-    </script> -->
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <script src="./App.js"></script>
-
-</body>
+    <script type="module" src="./App.js"></script>
+  </body>
 </html>
