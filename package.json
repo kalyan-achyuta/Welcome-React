@@ -4,6 +4,8 @@
   "description": "This is welcome React App by Achyuta Kalyan",
 
   "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html",
     "test": "jest"
   },
   "repository": {
