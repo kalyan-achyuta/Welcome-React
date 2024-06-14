@@ -59,3 +59,24 @@ import {Component} from "path";
 2 types of routing in web apps
  - Client side routing
  - Server side routing
+
+# LifeCycleMethod - Process
+
+-----MOUNTING PHASE-----
+
+  Constructor (Dummy)
+  Render (Dummy)
+    <HTML DUMMY>
+  ComponentDidMount
+    <API Call>
+    <this.setState> --> State Variable is updated
+
+------UPDATE PHASE-----
+
+  render(API data)
+    <HTML new API data>
+  ComponentDidUpdate
+
+------UNMOUNT PHASE------
+
+  ComponentWillUnmount ---> will call when remove the component from DOM (EX:- navigate to new page)
