@@ -80,3 +80,11 @@ import {Component} from "path";
 ------UNMOUNT PHASE------
 
   ComponentWillUnmount ---> will call when remove the component from DOM (EX:- navigate to new page)
+
+# 
+ Chunking
+ Code Splitting
+ Dynamic Bundling
+ Lazy Loading
+ On Demand Loading
+ Dynamic Import
