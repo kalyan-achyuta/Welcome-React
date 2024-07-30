@@ -1,8 +1,7 @@
 import CategoryList from "./CategoryList";
 
-const RestaurantCategory = ({ data, showItems, setShowIndex}) => {
+const RestaurantCategory = ({ data, showItems, setShowIndex, index}) => {
   const handleClick = () => {
-    console.log("clicked");
     setShowIndex();
   };
   return (
