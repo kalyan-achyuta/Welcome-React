@@ -20,7 +20,7 @@ const Cart = () => {
         >
           Clear Cart
         </button>
-        {cartItems.length === 0 && (<h1>Cart is Empty. Add your items!</h1>)}
+        {cartItems.length === 0 && <h1>Cart is Empty. Add your items!</h1>}
         <CategoryList items={cartItems} />
       </div>
     </div>

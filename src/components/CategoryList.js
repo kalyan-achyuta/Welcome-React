@@ -6,12 +6,13 @@ const CategoryList = ({ items }) => {
   const dispatch = useDispatch();
   const handleAddItem = (item) => {
     dispatch(addItem(item));
-  }
+  };
 
   return (
     <div>
       {items.map((item) => (
         <div
+          data-testid="foodItems"
           key={item.card.info.id}
           className="p-2 m-2 border-gray-200 border-b-2 text-left flex justify-between"
         >
@@ -29,8 +30,10 @@ const CategoryList = ({ items }) => {
           </div>
           <div className="w-3/12 p-4">
             <div className="absolute">
-              <button className="p-2 mx-16 rounded-lg font-bold bg-white text-green-600 shadow-lg"
-              onClick={() => handleAddItem(item)}>
+              <button
+                className="p-2 mx-16 rounded-lg font-bold bg-white text-green-600 shadow-lg"
+                onClick={() => handleAddItem(item)}
+              >
                 ADD +
               </button>
             </div>

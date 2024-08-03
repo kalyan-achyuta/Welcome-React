@@ -8,9 +8,8 @@ import { useSelector } from "react-redux";
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("Login");
   const onlineStatus = useOnlineStatus();
-  const { loggedInUser } = useContext(UserContext); 
+  const { loggedInUser } = useContext(UserContext);
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
 
   return (
     <div className="flex justify-between bg-green-50 shadow-lg sm:bg-yellow-50 lg:bg-blue-50">

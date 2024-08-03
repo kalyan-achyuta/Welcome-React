@@ -43,6 +43,7 @@ const Body = () => {
         <div className="m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid border-black"
             value={searchText}
             onChange={(e) => {
@@ -68,7 +69,7 @@ const Body = () => {
             className="px-4 py-2 bg-gray-50 rounded-lg"
             onClick={() => {
               const filteredList = listOfRestros.filter(
-                (res) => res.info.avgRating > 4
+                (res) => res.info.avgRating > 4.2
               );
               setListOfRestros(filteredList);
             }}
@@ -77,7 +78,7 @@ const Body = () => {
           </button>
         </div>
         <div className="m-4 p-4 flex items-center">
-          <lable>UserName :</lable>
+          <label>UserName :</label>
           <input
             className="border border-black"
             value={loggedInUser}

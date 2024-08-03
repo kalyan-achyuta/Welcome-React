@@ -72,7 +72,7 @@ const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
-      }
+      },
     ],
     errorElement: <Error />,
   },
